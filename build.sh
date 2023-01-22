@@ -1,6 +1,6 @@
 #!/bin/sh
 
-IMAGE_NAME="ajithaws02/frontend-guvi-dev"
+IMAGE_NAME="ajithaws02/frontend-guvi-$1"
 DATE=`date +%Y.%m.%d.%H.%M`
 IMAGE_TAG=$DATE 
 
