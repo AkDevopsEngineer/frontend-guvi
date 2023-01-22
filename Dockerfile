@@ -2,9 +2,9 @@ FROM node:16.19.0 as node
 
 WORKDIR /app
 
-COPY package-lock.json package.json ./
+COPY package.json .
 
-RUN npm ci
+RUN npm install --silent
 
 COPY . .
 
