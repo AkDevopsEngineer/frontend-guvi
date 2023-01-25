@@ -18,6 +18,6 @@ echo 'Build image Present.'
 docker images -q ${IMAGE_NAME}:${IMAGE_TAG}
 
 echo "Authenticating and pushing image to Docker Hub"
-docker login -u "ajithaws02" -p "Welcomeajith@1997" docker.io
+docker login -u "${USER_NAME}" -p "${PASSWORD}" docker.io
 docker push "${IMAGE_NAME}:${IMAGE_TAG}"
 sleep 20
